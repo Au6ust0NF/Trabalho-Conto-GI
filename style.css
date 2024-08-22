@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+:root {
+
+    --font-destaque: "Libre Baskerville", serif;
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --cor00: #ffeed8;
+    --cor01: #F2D1A7;
+    --cor02: #F9C191;
+    --cor03: #6F3E30;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--font-padrao);
+    background-color: var(--cor00);
+    color: var(--cor03);
+}
+
+header {
+    background-image: url(imagens/pexels-juanpphotoandvideo-877971.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    font-family: var(--font-destaque);
+    color: var(--cor01);
+    text-align: center;
+    height: 300px;
+
+}
+
+#cabecalho > p {
+    padding-top: 150px ;
+    font-size: 40px;
+     
+}
+
+main {
+    max-width: 900px;
+    min-width: 300px;
+    margin: auto;
+
+    border: 0;
+    flex: 1;
+
+    padding: 10px;
+    background-color: var(--cor01);
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 5px 4px 9px rgba(0, 0, 0, 0.345);
+
+}
+
+main > h1, h2 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    padding: 10px;
+}
+
+main > h2 {
+    text-align: left;
+    line-height: 1em;
+    letter-spacing: 3px;
+    background-image: linear-gradient(to right, var(--cor02), var(--cor01));
+    padding: 15px;
+
+}
+
+main > p {
+    text-indent: 5px;
+    font-weight: 700;
+
+    margin: 5px;
+    padding: 5px;
+    line-height: 2em;
+}
+
+label{
+    font-size: 40px;
+}
+footer {
+    background-color: var(--cor02);
+    padding: 3px;
+    margin-top: 25px;
+    font-weight: 550;
+}
+
+footer > h1 {
+    text-align: left;
+    font-family: var(--font-destaque);
+}
+
+footer > p {
+    padding: 5px;
+}
+
+
